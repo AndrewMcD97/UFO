@@ -113,6 +113,7 @@ head(sorted_ufo_data, 15)
 # Is 'gb' And Shape = 'disk', Store It In ufo_gb_disk DataFrame
 # -------------------------------------------------------------
 
+# Attaching To ufo_data And Making A Subset Based On Country And Shape
 attach(ufo_data)
 ufo_gb_disk <- subset(ufo_data, country == 'gb' & shape == 'disk')
 
